@@ -101,7 +101,7 @@ include_once '../../layout/navigation.php';
               move_uploaded_file($tmp_file, 'tmp/'.$nama_file_baru);
               
               // Load librari PHPExcel nya
-              require_once 'PHPExcel/PHPExcel.php';
+              require_once 'Classes/PHPExcel.php';
               
               $excelreader = new PHPExcel_Reader_Excel2007();
               $loadexcel = $excelreader->load('tmp/'.$nama_file_baru); // Load file yang tadi diupload ke folder tmp
